@@ -1,0 +1,140 @@
+html {
+    background-color: white;
+}
+
+body {
+    background: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: black;
+    max-width: auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+a:hover {
+    color: cadetblue;
+    transition: ease-in-out 0.2s;
+}
+
+.b {
+    font-size: 28px;
+    color: white;
+}
+
+.links {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    width: auto;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+}
+
+h1 {
+    text-align: center;
+    color: cadetblue;
+    font-size: 36px;
+    margin: 100px 100px 50px 100px;
+}
+
+p {
+    margin: 25px 100px 25px 100px;
+}
+
+/* ------------------- */
+/* home page */
+
+
+.wrap {
+    display: flex;
+    height: 500px;
+    margin: 0 0 0 100px;
+}
+
+.wrapp {
+    margin: auto;
+    font-size: 17px; 
+}
+
+.coffee {
+    max-height: 450px;
+    width: auto;
+    border-radius: 12px;
+    float: left;
+    margin: auto;
+}
+
+.click {
+    color: black;
+}
+
+
+/* ------------------- */
+/* my day page */
+
+.wh {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+	justify-content: space-evenly;
+}
+
+.polaroid-image {
+	width: 350px;
+	height: auto;
+}
+
+.polaroid {
+	height: auto;
+	width: auto;
+	background-color: white;
+	box-shadow: 2px 2px 2px 2px grey;
+}
+
+
+.caption {
+	text-align: center;
+}
+
+
+
+/* ------------------- */
+/* secret page */
+
+.vid {
+    display: block;
+    margin: auto;
+}
+
+.mail {
+    font-size: 72px;
+    color: black;
+}
+
+.tmail {
+    font-size: 72px;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.blah {
+    text-align: center;
+}
