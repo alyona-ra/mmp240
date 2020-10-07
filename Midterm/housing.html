@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing</title>
+    <link rel="stylesheet" href="css/housing.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h1 class="top-text"><a href="index.html">craigslist</a></h1>
+                <input type="text" name="search" placeholder="Search" id="1" autocomplete="off">
+                <div class="top-options-wrapper">
+                    <p class="location-selection">nyc</p>
+                    <div class="vertical-bar"></div>
+                    <p class="language-selection">eng</p>
+                </div>
+            </div>
+            <div class="locations-wrapper">
+                <div class="section-1">
+                    <p>Albany</p>
+                    <p>Allentown</p>
+                    <p>Baltimore</p>
+                    <p>Binghamton</p>
+                    <p>Catskills</p>
+                    <p>Central nj</p>
+                    <p>Delaware</p>
+                    <p>Eastern ct</p>
+                    <p>Eastern Shore</p>
+                    <p>Harrisburg</p>
+                    <p>Hartford</p>
+                    <p>Hudson Valley</p>
+                    <p>Jersey Shore</p>
+                    <p>Lancaster</p>
+                    <p>Long island</p>
+                    <p>New haven</p>
+                    <p>North jersey</p>
+                    <p>Northwest ct</p>
+                    <p>Oneonta</p>
+                    <p>Philadelphia</p>
+                    <p>Poconos</p>
+                    <p>Reading</p>
+                    <p>Rhode Island</p>
+                    <p>Scranton</p>
+                    <p>South Coast</p>
+                    <p>South Jersey</p>
+                    <p>Western Mass</p>
+                    <p>Williamsport</p>
+                    <p>Worcester</p>
+                    <p>York</p>
+                </div>
+                <div class="vertical-separator"></div>
+                <div class="inner-wrapper">
+                    <div class="section-2">
+                        <p>mnh</p>
+                        <p>brk</p>
+                        <p>que</p>
+                        <p>brx</p>
+                        <p>stn</p>
+                        <p>jsy</p>
+                        <p>lgi</p>
+                        <p>wch</p>
+                        <p>fct</p>
+                    </div>
+                    <div class="horizontal-separator"></div>
+                    <div class="section-3">
+                        <p>Nearby Cl</p>
+                        <p>US Cities</p>
+                        <p>US States</p>
+                        <p>Canada</p>
+                        <p>Cl Worldwide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="languages-wrapper">
+                <ul>
+                    <li>
+                        <p>english</p>
+                    </li>
+                    <li>
+                        <p>español</p>
+                    </li>
+                    <li>
+                        <p>deutsch</p>
+                    </li>
+                    <li>
+                        <p>français</p>
+                    </li>
+                    <li>
+                        <p>italiano</p>
+                    </li>
+                    <li>
+                        <p>português</p>
+                    </li>
+                    <li>
+                        <p>suomi</p>
+                    </li>
+                    <li>
+                        <p>svenska</p>
+                    </li>
+                    <li>
+                        <p>tiến việt</p>
+                    </li>
+                    <li>
+                        <p>türkçe</p>
+                    </li>
+                    <li>
+                        <p>русский</p>
+                    </li>
+                    <li>
+                        <p>普通话</p>
+                    </li>
+                    <li>
+                        <p>日本語</p>
+                    </li>
+                    <li>
+                        <p>한국어</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="left-menu">
+            <div class="type-wrapper">
+                <p>HOUSING:</p>
+                <label><input type="checkbox">select all</label>
+                <label><input type="checkbox">apartments / housing for rent</label>
+                <label><input type="checkbox">housing swap</label>
+                <label><input type="checkbox">office & commercial</label>
+                <label><input type="checkbox">parking & storage</label>
+                <label><input type="checkbox">real estate</label>
+                <label><input type="checkbox">rooms & shares</label>
+                <label><input type="checkbox">sublets & temporary</label>
+                <label><input type="checkbox">vacation rentals</label>
+                <label><input type="checkbox">wanted: apts</label>
+                <label><input type="checkbox">wanted: real estate</label>
+                <label><input type="checkbox">wanted: room/share</label>
+                <label><input type="checkbox">wanted: sublet/temp</label>
+            </div>
+            <div class="distance-wrapper">
+                <p>MILES FROM ZIP</p>
+                <div class="inner-wrapper">
+                    <input type="text" placeholder="ml" id="miles">
+                    <input type="text" placeholder="zip" id="zip">
+                    <img src="assets/images/svg/zip.svg" alt="location icon">
+                </div>
+            </div>
+            <div class="price-wrapper">
+                <p>PRICE</p>
+                <div class="inner-wrapper">
+                    <input type="text" id="price-from" placeholder="from">
+                    <input type="text" id="price-to" placeholder="to">
+                </div>
+            </div>
+            <div class="bedrooms-wrapper">
+                <p>BEDROOMS</p>
+                <input type="text" id="bed-num" placeholder="nmbr">
+            </div>
+            <div class="bathrooms-wrapper">
+                <p>BATHROOMS</p>
+                <input type="text" id="bath-num" placeholder="nmbr">
+            </div>
+            <div class="area-wrapper">
+                <p>FT <sup>2</sup></p>
+                <div class="inner-wrapper">
+                    <input type="text" id="area-from" placeholder="from">
+                    <input type="text" id="area-to" placeholder="to">
+                </div>
+            </div>
+            <div class="availability-wrapper">
+                <p>AVAILABILITY</p>
+                <div class="inner-wrapper">
+                    <p class="all-dates">all dates</p>
+                    <p class="less-than">&#60; 30</p>
+                    <p class="more-than">&#62; 30</p>
+                </div>
+            </div>
+            <div class="other-options-wrapper">
+                <div class="options">
+                    <div class="inner-wrapper">
+                        <img src="assets/images/svg/triangle.svg" alt="triangle">
+                        <p>more options</p>
+                    </div>
+                    <div class="checkboxes-wrapper">
+                        <label><input type="checkbox">cats ok</label>
+                        <label><input type="checkbox">dogs ok</label>
+                        <label><input type="checkbox">furnished</label>
+                        <label><input type="checkbox">no smoking</label>
+                        <label><input type="checkbox">wheelchair access</label>
+                        <label><input type="checkbox">EV charging</label>
+                        <label><input type="checkbox">no application fee</label>
+                        <label><input type="checkbox">no broker fee</label>
+                    </div>
+                </div>
+                <div class="housing-type">
+                    <div class="inner-wrapper">
+                        <img src="assets/images/svg/triangle.svg" alt="triangle">
+                        <p>housing type</p>
+                    </div>
+                    <div class="checkboxes-wrapper">
+                        <label><input type="checkbox">apartment</label>
+                        <label><input type="checkbox">condo</label>
+                        <label><input type="checkbox">cottage/cabin</label>
+                        <label><input type="checkbox">duplex</label>
+                        <label><input type="checkbox">flat</label>
+                        <label><input type="checkbox">house</label>
+                        <label><input type="checkbox">in-law</label>
+                        <label><input type="checkbox">loft</label>
+                        <label><input type="checkbox">townhouse</label>
+                        <label><input type="checkbox">manufactured</label>
+                        <label><input type="checkbox">assisted living</label>
+                        <label><input type="checkbox">land</label>
+                    </div>
+                </div>
+                <div class="laundry">
+                    <div class="inner-wrapper">
+                        <img src="assets/images/svg/triangle.svg" alt="triangle">
+                        <p>laundry</p>
+                    </div>
+                    <div class="checkboxes-wrapper">
+                        <label><input type="checkbox">w/d in unit</label>
+                        <label><input type="checkbox">w/d hookups</label>
+                        <label><input type="checkbox">laundry in bldg</label>
+                        <label><input type="checkbox">laundry on site</label>
+                        <label><input type="checkbox">no laundry on site</label>
+                    </div>
+                </div>
+                <div class="parking">
+                    <div class="inner-wrapper">
+                        <img src="assets/images/svg/triangle.svg" alt="triangle">
+                        <p>parking</p>
+                    </div>
+                    <div class="checkboxes-wrapper">
+                        <label><input type="checkbox">carport</label>
+                        <label><input type="checkbox">attached garage</label>
+                        <label><input type="checkbox">detached garage</label>
+                        <label><input type="checkbox">off-street parking</label>
+                        <label><input type="checkbox">street parking</label>
+                        <label><input type="checkbox">valet parking</label>
+                        <label><input type="checkbox">no parking</label>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="inner-wrapper">
+                        <img src="assets/images/svg/triangle.svg" alt="triangle">
+                        <p>other</p>
+                    </div>
+                    <div class="checkboxes-wrapper">
+                        <label><input type="checkbox">search titles only</label>
+                        <label><input type="checkbox">has image</label>
+                        <label><input type="checkbox">posted today</label>
+                        <label><input type="checkbox">bundle duplicates</label>
+                        <label><input type="checkbox">include nearby areas</label>
+                    </div>
+                </div>
+            </div>
+            <div class="controls-wrapper">
+                <button id="reset">RESET</button>
+                <button id="update">UPDATE</button>
+            </div>
+        </div>
+        <div class="main-content-wrapper">
+            <div class="controls-wrapper">
+                <div class="sorting">
+                    <p>Sort by:</p>
+                    <p>new</p>
+                    <p>price &#8593;</p>
+                    <p>price &#8595;</p>
+                </div>
+                <div class="layout">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.87 477.87">
+                        <path
+                            d="M460.81,0a17.12,17.12,0,0,0-7.63,1.8L323.84,66.48,177.6,1.48c-.24-.11-.51-.12-.77-.23a17.87,17.87,0,0,0-2-.61,18.1,18.1,0,0,0-2.07-.43,26.26,26.26,0,0,0-4.16,0,18.1,18.1,0,0,0-2.07.43,17.87,17.87,0,0,0-2,.61c-.26.11-.53.12-.77.23L10.14,69.74A17.09,17.09,0,0,0,0,85.34V460.81a17.08,17.08,0,0,0,24,15.6l146.67-65.2,146.67,65.2c.26.1.53,0,.79.15a15.07,15.07,0,0,0,12.92-.29c.27-.12.58,0,.85-.19l136.53-68.26a17.07,17.07,0,0,0,9.44-15.28V17.08A17.06,17.06,0,0,0,460.81,0ZM153.6,381.45,34.14,434.54V96.43L153.6,43.34Zm153.6,53.09L187.74,381.45V43.34L307.2,96.43ZM443.74,382l-102.4,51.2V95.89l102.4-51.2Z"
+                            transform="translate(0 0)" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 270">
+                        <path d="M323,31.5H10a10,10,0,0,0,0,20H323a10,10,0,0,0,0-20Z" transform="translate(0 -31.5)" />
+                        <path d="M230,114.5H10a10,10,0,0,0,0,20H230a10,10,0,0,0,0-20Z" transform="translate(0 -31.5)" />
+                        <path d="M323,198.5H10a10,10,0,0,0,0,20H323a10,10,0,0,0,0-20Z" transform="translate(0 -31.5)" />
+                        <path d="M151,281.5H10a10,10,0,0,0,0,20H151a10,10,0,0,0,0-20Z" transform="translate(0 -31.5)" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.87 477.87">
+                        <path
+                            d="M119.47,0H17.07A17.07,17.07,0,0,0,0,17.07v102.4a17.06,17.06,0,0,0,17.07,17.06h102.4a17.06,17.06,0,0,0,17.06-17.06V17.07A17.06,17.06,0,0,0,119.47,0Z" />
+                        <path
+                            d="M119.47,170.67H17.07A17.06,17.06,0,0,0,0,187.73v102.4A17.07,17.07,0,0,0,17.07,307.2h102.4a17.06,17.06,0,0,0,17.06-17.07V187.73A17.06,17.06,0,0,0,119.47,170.67Z" />
+                        <path
+                            d="M119.47,341.33H17.07A17.07,17.07,0,0,0,0,358.4V460.8a17.07,17.07,0,0,0,17.07,17.07h102.4a17.06,17.06,0,0,0,17.06-17.07V358.4A17.06,17.06,0,0,0,119.47,341.33Z" />
+                        <path d="M460.8,51.2H187.73a17.07,17.07,0,0,0,0,34.13H460.8a17.07,17.07,0,1,0,0-34.13Z" />
+                        <path d="M460.8,221.87H187.73a17.07,17.07,0,0,0,0,34.13H460.8a17.07,17.07,0,1,0,0-34.13Z" />
+                        <path d="M460.8,392.53H187.73a17.07,17.07,0,0,0,0,34.14H460.8a17.07,17.07,0,0,0,0-34.14Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path
+                            d="M15.2,3.29v8.62a3.29,3.29,0,0,1-3.29,3.29H3.29A3.29,3.29,0,0,1,0,11.91V3.29A3.29,3.29,0,0,1,3.29,0h8.62A3.29,3.29,0,0,1,15.2,3.29ZM29.71,0H21.09A3.29,3.29,0,0,0,17.8,3.29v8.62a3.29,3.29,0,0,0,3.29,3.29h8.62A3.29,3.29,0,0,0,33,11.91V3.29A3.29,3.29,0,0,0,29.71,0ZM11.91,17.8H3.29A3.29,3.29,0,0,0,0,21.09v8.62A3.29,3.29,0,0,0,3.29,33h8.62a3.29,3.29,0,0,0,3.29-3.29V21.09A3.29,3.29,0,0,0,11.91,17.8Zm17.8,0H21.09a3.29,3.29,0,0,0-3.29,3.29v8.62A3.29,3.29,0,0,0,21.09,33h8.62A3.29,3.29,0,0,0,33,29.71V21.09A3.29,3.29,0,0,0,29.71,17.8Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="description.html">
+                            <div class="thumb"></div>
+                        </a>
+                        <p class="name">NAME</p>
+                        <p class="info">Other info</p>
+                        <div class="inner-wrapper">
+                            <p>$$$</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                <path
+                                    d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                    transform="translate(0 -11.8)" /></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="content">
+                            <a href="description.html">
+                                <div class="thumb"></div>
+                            </a>
+                            <p class="name">NAME</p>
+                            <p class="info">Other info</p>
+                            <div class="inner-wrapper">
+                                <p>$$$</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
+                                    <path
+                                        d="M511.27,197.26a15,15,0,0,0-12.11-10.21L340.44,164l-71-143.82a15,15,0,0,0-26.9,0L171.56,164,12.84,187.05a15,15,0,0,0-8.31,25.58l114.85,112L92.27,482.67A15,15,0,0,0,114,498.48l142-74.63,142,74.63a15,15,0,0,0,21.77-15.81L392.61,324.59l114.86-112A15,15,0,0,0,511.27,197.26Z"
+                                        transform="translate(0 -11.8)" /></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="place-ad">
+            <img src="assets/images/svg/plus.svg" alt="place add sign">
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/housing.js"></script>
+</body>
+
+</html>
