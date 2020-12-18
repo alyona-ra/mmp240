@@ -204,7 +204,7 @@ main .main-content-wrapper .left label input[type='checkbox'] {
 }
 
 main .main-content-wrapper .left label input[type='checkbox']:checked + span {
-  background: url("/assets/icons/check.png");
+  background: url("../icons/check.png");
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 0.4s;

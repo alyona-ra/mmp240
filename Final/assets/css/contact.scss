@@ -182,7 +182,7 @@ main {
           opacity: 0;
 
           &:checked + span {
-            background: url('/assets/icons/check.png');
+            background: url('../icons/check.png');
             transition-property: background-color;
             transition-duration: 0.4s;
             background-color: $main-pink;
