@@ -1,0 +1,253 @@
+$main-pink: #fbf1ff;
+
+@font-face {
+  font-family: 'HelveticaNeueThin';
+  src: url('/assets/fonts/HelveticaNeueCyr-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLight';
+  src: url('/assets/fonts/HelveticaNeueCyr-Light.ttf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueUltraLight';
+  src: url('/assets/fonts/HelveticaNeueCyr-UltraLight.ttf');
+}
+
+::selection {
+  color: rgb(255, 209, 247);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(70, 70, 70);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  background-color: rgb(117, 117, 117);
+
+  &:active {
+    background-color: rgb(99, 99, 99);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  transition: ease-in-out .3s;
+}
+
+img {
+  user-select: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  width: 100%;
+  font-family: 'HelveticaNeueUltraLight';
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 160px;
+  }
+
+  .links-wrapper {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    justify-self: flex-end;
+    color: $main-pink;
+    font-size: 26px;
+    font-family: 'HelveticaNeueLight';
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: $main-pink;
+      margin: 0 30px 0 30px;
+      cursor: pointer;
+      transition-property: color !important;
+      transition-duration: .1s !important;
+
+      &:hover {
+        color: #ddc4ff;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 500px){
+    margin-bottom: 100px;
+
+    img {
+      width: 120px;
+    }
+
+    .links-wrapper {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 100px;
+
+    img {
+      width: 80px;
+    }
+
+    .links-wrapper {
+      font-size: 16px;
+
+      a {
+        margin: 0 5px 0 5px;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 142px);
+
+  .main-content-wrapper {
+    width: 30%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      color: $main-pink;
+      text-transform: uppercase;
+      width: 100%;
+      margin: 10px 0 10px 0;
+    }
+
+    .top {
+      text-align: left;
+      font-family: 'HelveticaNeueUltraLight';
+      font-size: 2vw;
+      padding-left: 7vw;
+      opacity: 0.8;
+    }
+
+    .middle {
+      text-align: center;
+      font-family: 'HelveticaNeueThin';
+      font-size: 5vw;
+      line-height: 0.9;
+
+      .first {
+        font-size: 7vw;
+        margin-bottom: -5px;
+      }
+    }
+
+    .bottom {
+      text-align: right;
+      font-family: 'HelveticaNeueUltraLight';
+      font-size: 2vw;
+      padding-right: 5.5vw;
+      opacity: 0.8;
+    }
+  }
+
+  .social-links-wrapper {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+
+    a {
+      opacity: 0.5;
+      transition: ease-in-out 0.3s;
+
+      img {
+        width: 20px;
+        height: auto;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 500px){
+    .main-content-wrapper {
+      width: 90%;
+
+      .top {
+        font-size: 4vw;
+        padding-left: 28vw;
+        margin-bottom: 0;
+      }
+
+      .middle {
+        .first {
+          font-size: 14vw;
+        }
+
+        .second {
+          font-size: 10vw;
+        }
+      }
+
+      .bottom {
+        font-size: 4vw;
+        padding-right: 26vw;
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .main-content-wrapper {
+      width: 90%;
+
+      .top {
+        font-size: 5vw;
+        padding-left: 21vw;
+        margin-bottom: 0;
+      }
+
+      .middle {
+        .first {
+          font-size: 20vw;
+        }
+
+        .second {
+          font-size: 14vw;
+        }
+      }
+
+      .bottom {
+        font-size: 5vw;
+        padding-right: 19vw;
+        margin-top: 0;
+      }
+    }
+
+    .social-links-wrapper {
+      flex-direction: row;
+      width: 90px;
+      height: 30px;
+      left: calc(50vw - 45px);
+    }
+  }
+}
