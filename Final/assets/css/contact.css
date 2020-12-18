@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'HelveticaNeueThin';
-  src: url("/assets/fonts/HelveticaNeueCyr-Thin.ttf");
+  src: url(/assets/fonts/HelveticaNeueCyr-Thin.ttf);
 }
 
 @font-face {
   font-family: 'HelveticaNeueLight';
-  src: url("/assets/fonts/HelveticaNeueCyr-Light.ttf");
+  src: url(/assets/fonts/HelveticaNeueCyr-Light.ttf);
 }
 
 @font-face {
   font-family: 'HelveticaNeueUltraLight';
-  src: url("/assets/fonts/HelveticaNeueCyr-UltraLight.ttf");
+  src: url(/assets/fonts/HelveticaNeueCyr-UltraLight.ttf);
 }
 
 ::-moz-selection {
