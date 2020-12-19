@@ -244,7 +244,7 @@ main .main-content-wrapper .right textarea {
   opacity: 0.8;
   font-size: 19px;
   font-family: 'HelveticaNeueLight';
-  margin-top: 79px;
+  margin-top: 123px;
   scrollbar-width: thin;
 }
 
@@ -295,7 +295,7 @@ main .main-content-wrapper .right .button-inactive:hover {
 
 main .main-content-wrapper .right .decorative {
   position: absolute;
-  top: 74px;
+  top: 118px;
   right: -5px;
   border-top: 2px solid #fbf1ff;
   border-right: 2px solid #fbf1ff;
